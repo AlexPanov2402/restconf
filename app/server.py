@@ -1,8 +1,8 @@
 import os
 
-from fastapi import FastAPI
 import uvicorn
 from dotenv import load_dotenv
+from fastapi import FastAPI
 
 from app.restconf import router as restconf_router
 
