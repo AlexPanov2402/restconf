@@ -1,0 +1,13 @@
+{
+    "ietf-yang-library:modules-state": {
+        "module": [
+            {
+                "name": "jukebox",
+                "revision": "2016-06-21",
+                "namespace": "http://example.com/ns/example-jukebox",
+                "conformance-type": "implement"
+            }
+        ],
+        "module-set-id": "1"
+    }
+}

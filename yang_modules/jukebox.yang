@@ -1,0 +1,61 @@
+module jukebox {
+  namespace "http://example.com/ns/example-jukebox";
+  prefix "jb";
+
+  organization "Example, Inc.";
+  contact "support@example.com";
+  description
+    "Example jukebox data model from RFC 8040";
+
+  revision "2016-06-21" {
+    description "Initial revision";
+  }
+
+  container jukebox {
+    description "Top-level container for jukebox data";
+
+    container library {
+      description "Collection of albums";
+
+      list album {
+        key "name";
+        leaf name {
+          type string;
+        }
+        leaf artist {
+          type string;
+        }
+        list song {
+          key "name";
+          leaf name {
+            type string;
+          }
+          leaf location {
+            type string;
+          }
+        }
+      }
+    }
+  }
+
+  rpc play-song {
+    input {
+      leaf song {
+        type string;
+      }
+    }
+    output {
+      leaf status {
+        type string;
+      }
+    }
+  }
+
+  rpc stop {
+    output {
+      leaf status {
+        type string;
+      }
+    }
+  }
+}
