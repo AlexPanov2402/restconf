@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  restconf:
+    build: .
+    container_name: restconf_server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./yang_modules:/app/yang_modules
+      - ./library.json:/app/library.json
+    env_file:
+      - .env

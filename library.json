@@ -3,8 +3,8 @@
         "module": [
             {
                 "name": "jukebox",
-                "revision": "2016-06-21",
                 "namespace": "http://example.com/ns/example-jukebox",
+                "schema": "jukebox.yang",
                 "conformance-type": "implement"
             }
         ],
