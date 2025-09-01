@@ -1,6 +1,5 @@
 annotated-types==0.7.0
 anyio==4.10.0
--e git+ssh://git@github.com/AlexPanov2402/restconf.git@c646f439f96b36c256b73638d80ba7438b4fc5ad#egg=app
 attrs==25.3.0
 build==1.3.0
 CacheControl==0.14.3
