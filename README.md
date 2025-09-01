@@ -12,9 +12,13 @@
 
 ## Используемый стек:
 Python 3.11
+
 FastAPI (swager api) + Uvicorn
+
 Poetry (управление зависимостями)
+
 Docker + docker-compose
+
 pyang, yangson (работа с YANG)
 
 ## Возможности
@@ -122,3 +126,5 @@ curl -X POST http://127.0.0.1:8000/restconf/operations/play-song \
 ##### PATCH: Изменяет данные, изменения видны при последующем GET.
 
 ##### POST: на RPC-эндпоинт вызывает соответствующий метод-обработчик.
+
+
